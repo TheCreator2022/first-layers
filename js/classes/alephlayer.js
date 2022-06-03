@@ -17,7 +17,7 @@ class AlephLayer
             deltaBoost: new AlephUpgrade("Gain more 🗡",
                 level => Decimal.pow(1e5, level).mul(1e3),
                 level => Decimal.pow(10, level), {
-                    maxLevel: 4
+                    maxLevel: 100
                 }),
             powerGenerators: new AlephUpgrade("All Power Generators on every Layer are stronger",
                 level => Utils.createValueDilation(Decimal.pow(1e5, Decimal.pow(level, 1.5)).mul(1e20), 0.001),
@@ -65,7 +65,7 @@ class AlephLayer
     {
         if(functions.maxLayerUnlocked() < 3) return new Decimal(0);
         if(game.layers[3].timesReset === 0) return new Decimal(0);
-        return Decimal.pow(10, Math.max(0, functions.maxLayerUnlocked() - 3));
+        return Decimal.pow(1000, Math.max(0, functions.maxLayerUnlocked() - 3));
     }
 
     maxAll()
