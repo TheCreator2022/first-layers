@@ -105,6 +105,7 @@ const game = {
         new Achievement("f(t)1 I", "Reach 1000", "☛ I", () => (game.layers[1] && game.layers[1].resource.gt(1000)) || game.metaLayer.active),
         new Achievement("f(t)1 II", "Reach 1e60", "☛ II", () => (game.layers[1] && game.layers[1].resource.gt(1e60)) || game.metaLayer.active),
         new Achievement("f(t)1 III", "Reach 1e2048", "☛ III", () => (game.layers[1] && game.layers[1].resource.gt("1e2048")) || game.metaLayer.active),
+        new Achievement("f(t)1 IV", "Reach 1e888777", "☛ IV", () => (game.layers[1] && game.layers[1].resource.gt("1e888777")) || game.metaLayer.active),
         new Achievement("gun", "bang bang bang - kitchen gun guy", "🔫", () => (game.layers[2] && game.layers[2].resource.gt(1)) || game.metaLayer.active),
         new Achievement("dt I", "Reach 1e10", "🔫 I", () => (game.layers[2] && game.layers[2].resource.gt(1e10)) || game.metaLayer.active),
         new Achievement("when life gives you tasks", "turn them into useless upgrades that nobody will use", "🗡", () => (game.layers[3] && game.layers[3].resource.gt(1)) || game.metaLayer.active),
@@ -117,6 +118,7 @@ const game = {
         new Achievement("10^365 days", "1e365 (365 days after year?)", "`|€/-||2", () => game.metaLayer.layer.gte("1e365")),
         new Achievement("you win", "or do you?!?!?!!", "<span class='flipped-v'>ඞ</span>", () => game.metaLayer.layer.gte(INFINITY)),
         new Achievement("Starting Out", "Reach 1 α (somehow?)", "αααααααααα", () => game.metaLayer.layer.gte(INFINITY2)),
+        new Achievement("Die", "Eee", PrestigeLayer.getNameForLayer("1e1096336"), () => game.metaLayer.layer.gte("1e1096336")),
         new Achievement("Other Times Await", "something's up", "ββββββββββ", () => game.metaLayer.layer.gte(INFINITY3)),
         new Achievement("get the impossible upgrade", "what", "winwinwinwinwin", () => game.sabotageLayer.upgrades.winPercentage.level.gte("1"))
     ],
