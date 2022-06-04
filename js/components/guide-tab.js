@@ -13,7 +13,7 @@ Vue.component("guide-tab", {
     },
     template: `<div class="guide-tab">
     <guide-item>
-        <template v-slot:title>thing</template>
+        <template v-slot:title>v1.1.0 beta</template>
         <template v-slot:text>welcome to sussy layers now go away
         </template>
     </guide-item>
