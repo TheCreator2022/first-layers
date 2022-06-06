@@ -143,7 +143,7 @@ const game = {
         new Achievement("I Never Bicaturly Ends", "Reach layer 1ee999", "👍", () => game.metaLayer.layer.gte("1ee999")),
         new Achievement("I Whatsapp Ends", "Reach layer 1e123456789", PrestigeLayer.getNameForLayer(62) + "↑↑↑4", () => game.metaLayer.layer.gte("1e123456789")),
         new Achievement("I Teturly Ends", "Reach layer 1ee20", "👍", () => game.metaLayer.layer.gte("1ee20")),
-        new Achievement("get the impossible upgrade", "what", "winwinwinwinwin", () => game.sabotageLayer.upgrades.winPercentage.level.gte("1"))
+        new Achievement("get the impossible upgrade", "what", "winwinwinwinwin", () => game.sabotageLayer.upgrades.winPercentage.level.gte("1")),
         new Achievement("2 get the impossible upgrade", "what what", "winwinwinwinwin", () => game.sabotageLayer.upgrades.winPercentage.level.gte("2"))
     ],
     alephLayer: new AlephLayer(),
