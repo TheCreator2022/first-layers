@@ -25,7 +25,7 @@ class SabotageLayer
                     getEffectDisplay: effectDisplayTemplates.numberStandard(3,"÷","")
                 }),
             metaTet: new sabotageUpgrade("Tetrate the resource multiplier",
-                level => new Decimal("1e1000"),
+                level => new Decimal("1e100"),
                 level => new Decimal("1").add(level.mul("0.2")), {
                     maxLevel: 1,
                     getEffectDisplay: effectDisplayTemplates.numberStandard(1,"^^","")
